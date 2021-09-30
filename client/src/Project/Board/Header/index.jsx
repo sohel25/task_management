@@ -9,15 +9,18 @@ import { Item } from '../../NavbarLeft/Styles';
 import { Header, BoardName } from './Styles';
 
 const ProjectBoardHeader = (issueCreateModalOpen) => (
+  <>
   <Header>
     <BoardName>Kanban board</BoardName>
 
-    <Link to={'/create'}  >
+    {/* <Link to={'/create'}  >
       <Button className="btn primary">New Task</Button>
-      </Link>
-      <CreateModal/>
-
+      </Link> */}
+<CreateModal/>
   </Header>
+      
+      </>
+
 );
 
 export default ProjectBoardHeader;
